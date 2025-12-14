@@ -1,5 +1,11 @@
-﻿https://qiita.com/satto_sann/items/be4177360a0bc3691fdf
+﻿以下のコードを Google Apps Script で、  
+ウェブアプリとして実行できるようにする。  
 
+https://developers.google.com/apps-script?hl=ja
+
+
+
+```
 function doGet( e )
 {
   return translate( e ) ;
@@ -48,4 +54,8 @@ function translate( e )
 
     return response ;
 }
+```
+
+上記のコードによるウェブアプリのURLを取得して、  
+Program.cs の m_TranslationApi に設定する。
 

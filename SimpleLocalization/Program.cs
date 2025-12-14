@@ -45,7 +45,7 @@ namespace SimpleLocalization
 	public static class Program
 	{
 		// Google 翻訳 API の URL
-		private const string m_TranslateApi = "https://script.google.com/macros/s/AKfycbzln3vdk_a4RplLodsajbzidKK0YUT9NLdZ4tkpHuULNw-JArM2w4Vdja9K3Sv1FYPskw/exec" ;
+		private const string m_TranslationApi = "https://script.google.com/macros/s/AKfycbzln3vdk_a4RplLodsajbzidKK0YUT9NLdZ4tkpHuULNw-JArM2w4Vdja9K3Sv1FYPskw/exec" ;
 
 		/// <summary>
 		/// メイン
@@ -345,7 +345,7 @@ namespace SimpleLocalization
 
 							// 翻訳を実行する(GETはQueryString2048文字制限があるのでPOST使用を推奨)
 //							string responseString = await ta.GetAsync( m_TranslateApi, parameters ) ;	// こちらも一応使える
-							string responseString = await ta.PostAsync( m_TranslateApi, parameters ) ;
+							string responseString = await ta.PostAsync( m_TranslationApi, parameters ) ;
 
 							if( string.IsNullOrEmpty( responseString ) == false )
 							{
